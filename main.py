@@ -1,23 +1,46 @@
+#!/usr/bin/env python
+
+"""
+Price Checker Python GUI
+"""
+
 import tkinter
 import tkinter.messagebox
 
+__author__ = "Matthew Mangus"
+__copyright__ = "Copyright 2025, Matthew Mangus"
+__credits__ = ["Matthew Mangus"]
+__license__ = "The Unlicense"
+__version__ = "1.0.1"
+__maintainer__ = "Matthew Mangus"
+__email__ = "mmangus1@student.montcalm.edu"
+__status__ = "Development"
 
 class App(tkinter.Frame):
-    def __init__(self, parent, *args, **kwargs):
-        '''
+    """Create a Tkinter Window GUI.
 
-        :param parent:
-        :param args:
-        :param kwargs:
-        '''
+    Keyword Arguments:
+    tkinter.frame = tkinter.frame instance argument
+    """
+
+    def __init__(self, parent, *args, **kwargs) -> None:
+        """Create the initial method for App Class.
+
+        Keyword Arguments:
+        self =
+        parent =
+        *args =
+        **kwargs =
+        """
         super().__init__()
         self.parent = parent
 
-def main():
-    '''
+def main() -> None:
+    """Create the main function, mainly to handle errors in the proceeding code.
 
-    :return:
-    '''
+    Keyword Arguments:
+    None
+    """
     try:
         # Main GUI Window Set Up:
         root = tkinter.Tk()
@@ -54,8 +77,8 @@ def main():
         App(root).pack()
         root.mainloop()
 
-    except Exception as E:
-        tkinter.messagebox.showerror(f'Error: {E}')
+    except Exception as e:
+        tkinter.messagebox.showerror(f'Error: {e}')
 
 
 
