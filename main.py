@@ -94,6 +94,36 @@ def main() -> None:
         # Item Search Textbox Placement:
         item_search_textbox.place(x=150,y=20)
 
+        # Or Label:
+        or_label = tkinter.Label(root, text="OR")
+
+        # Or Label Placement:
+        or_label.place(x=150,y=47)
+
+        # Product Code Label:
+        productcode_label = tkinter.Label(root, text="Product Code:")
+
+        # Product Code Label Placement:
+        productcode_label.place(x=63,y=75)
+
+        # Product Code Textbox:
+        productcode_textbox = tkinter.Text(root, height=1, width=20)
+
+        # Product Code Textbox Placement:
+        productcode_textbox.place(x=150, y=75)
+
+        # Individual Search Button:
+        individual_search_button = tkinter.Button(root, text="Search")
+
+        # Individual Search Button Placement:
+        individual_search_button.place(x=350, y=47)
+
+        prices_label = tkinter.Label(root, text="Prices:")
+
+        prices_label.place(x=600,y=20)
+
+
+
         App(root).pack()
         root.mainloop()
 
