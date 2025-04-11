@@ -73,6 +73,26 @@ def main() -> None:
             menu=edit_menu,
         )
 
+        # "Help" Menu:
+        help_menu = tkinter.Menu(menubar, tearoff=0)
+
+        # "Help" Button:
+        menubar.add_cascade(
+            label="Help",
+            menu=help_menu,
+        )
+
+        # Item Search Label:
+        item_search_label = tkinter.Label(root, text="Individual Item Search:")
+
+        # Item Search Label Placement:
+        item_search_label.place(x=20,y=20)
+
+        # Item Search Textbox:
+        item_search_textbox = tkinter.Text(root, height=1, width=20)
+
+        # Item Search Textbox Placement:
+        item_search_textbox.place(x=150,y=20)
 
         App(root).pack()
         root.mainloop()
