@@ -100,16 +100,16 @@ def main() -> None:
         # Or Label Placement:
         or_label.place(x=150,y=47)
 
-        # Product Code Label:
-        productcode_label = tkinter.Label(root, text="Product Code:")
+        # Item Code Label:
+        productcode_label = tkinter.Label(root, text="Item Code:")
 
-        # Product Code Label Placement:
+        # Item Code Label Placement:
         productcode_label.place(x=63,y=75)
 
-        # Product Code Textbox:
+        # Item Code Textbox:
         productcode_textbox = tkinter.Text(root, height=1, width=20)
 
-        # Product Code Textbox Placement:
+        # Item Code Textbox Placement:
         productcode_textbox.place(x=150, y=75)
 
         # Individual Search Button:
