@@ -16,6 +16,7 @@ __maintainer__ = "Matthew Mangus"
 __email__ = "mmangus1@student.montcalm.edu"
 __status__ = "Development"
 
+
 class App(tkinter.Frame):
     """Create a Tkinter Window GUI.
 
@@ -34,6 +35,11 @@ class App(tkinter.Frame):
         """
         super().__init__()
         self.parent = parent
+
+
+def search(productcode):
+
+
 
 def main() -> None:
     """Create the main function, mainly to handle errors in the proceeding code.
@@ -113,7 +119,7 @@ def main() -> None:
         productcode_textbox.place(x=150, y=75)
 
         # Individual Search Button:
-        individual_search_button = tkinter.Button(root, text="Search")
+        individual_search_button = tkinter.Button(root, text="Search", command=search(productcode=productcode_textbox.get("1.0", tkinter.END)))
 
         # Individual Search Button Placement:
         individual_search_button.place(x=350, y=47)
