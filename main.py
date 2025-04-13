@@ -118,11 +118,35 @@ def main() -> None:
         # Individual Search Button Placement:
         individual_search_button.place(x=350, y=47)
 
+        # Prices Label:
         prices_label = tkinter.Label(root, text="Prices:")
 
-        prices_label.place(x=600,y=20)
+        # Prices Label Placement:
+        prices_label.place(x=600,y=10)
 
+        # Amazon.com Label:
+        amazon_label = tkinter.Label(root, text="Amazon.com:")
 
+        # Amazon.com Label Placement:
+        amazon_label.place(x=500,y=40)
+
+        # Amazon.com Textbox:
+        amazon_textbox = tkinter.Text(root, height=1, width=25)
+
+        # Amazon.com Textbox Placement:
+        amazon_textbox.place(x=600,y=40)
+
+        # Walmart.com Label:
+        walmart_label = tkinter.Label(root, text="Walmart.com:")
+
+        # Walmart.com Label Placement:
+        walmart_label.place(x=500,y=80)
+
+        # Walmart Textbox:
+        walmart_textbox = tkinter.Text(root, height=1, width=25)
+
+        # Walmart Textbox Placement:
+        walmart_textbox.place(x=600,y=80)
 
         App(root).pack()
         root.mainloop()
