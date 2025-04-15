@@ -37,9 +37,10 @@ class App(tkinter.Frame):
         self.parent = parent
 
 
-def search(productcode):
-
-
+def search(productcode,itemsearch):
+    productcode = 1
+    itemsearch =1
+    # TODO: Finish search function to use productcode and/or itemsearch variables to retrieve and display prices from Walmart and Amazon
 
 def main() -> None:
     """Create the main function, mainly to handle errors in the proceeding code.
@@ -119,7 +120,7 @@ def main() -> None:
         productcode_textbox.place(x=150, y=75)
 
         # Individual Search Button:
-        individual_search_button = tkinter.Button(root, text="Search", command=search(productcode=productcode_textbox.get("1.0", tkinter.END)))
+        individual_search_button = tkinter.Button(root, text="Search", command=search(productcode=productcode_textbox.get("1.0", tkinter.END),itemsearch=item_search_textbox.get("1.0", tkinter.END)))
 
         # Individual Search Button Placement:
         individual_search_button.place(x=350, y=47)
