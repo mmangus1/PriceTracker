@@ -6,6 +6,13 @@ Price Checker Python GUI
 
 import tkinter
 import tkinter.messagebox
+import smtplib
+from typing import AnyStr
+
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+from price_parser import Price
 
 __author__ = "Matthew Mangus"
 __copyright__ = "Copyright 2025, Matthew Mangus"
@@ -37,10 +44,51 @@ class App(tkinter.Frame):
         self.parent = parent
 
 
-def search(productcode,itemsearch):
-    productcode = 1
-    itemsearch =1
-    # TODO: Finish search function to use productcode and/or itemsearch variables to retrieve and display prices from Walmart and Amazon
+def search(productcode: str,itemsearch: str) -> tuple[str,str]:
+
+    # Set User Agent of Browser:
+    header = ({'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) '
+                             'AppleWebKit/537.36 (KHTML, like Gecko) '
+                             'Chrome/44.0.2403.157 Safari/537.36',
+                             'Accept-Language': 'en-US, en;q=0.5'})
+
+    if (productcode != None or productcode != ""):
+        search_query = productcode
+    else:
+        search_query = itemsearch
+
+    # Walmart.com HTTP Request:
+    walmart_search = requests.get('https://www.walmart.com/search?q=' + search_query, headers=header)
+
+    # Amazon.com HTTP Request:
+    amazon_search = requests.get('https://www.amazon.com/s?k=' + search_query, headers=header)
+
+    # Save Walmart Webpage Data:
+    walmart_soup = BeautifulSoup(walmart_search.content, 'lxml')
+
+    # Save Amazon Webpage Data:
+    amazon_soup = BeautifulSoup(amazon_search.content, 'lxml')
+
+    # Walmart Price Retrieval:
+    try:
+        walmart_price = (walmart_soup.find("span", attrs={'id': 'priceblock_ourprice'})
+                 .string.strip().replace(',', ''))
+
+    except AttributeError:
+        walmart_price = "NA"
+
+    # Amazon Price Retrieval:
+    try:
+        amazon_price = (amazon_soup.find("span", attrs={'id': 'priceblock_ourprice'})
+                         .string.strip().replace(',', ''))
+
+    except AttributeError:
+        amazon_price = "NA"
+
+    # Must find code to bypass captcha's and anti bots, remove bugs from unsanitized inputs, set prices to text boxes.
+
+    return walmart_price, amazon_price
+
 
 def main() -> None:
     """Create the main function, mainly to handle errors in the proceeding code.
