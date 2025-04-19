@@ -8,7 +8,7 @@ import tkinter
 import tkinter.messagebox
 import smtplib
 from typing import AnyStr
-
+import solvecaptcha-python # Looks like this is the module I'll use
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
@@ -86,6 +86,7 @@ def search(productcode: str,itemsearch: str) -> tuple[str,str]:
         amazon_price = "NA"
 
     # Must find code to bypass captcha's and anti bots, remove bugs from unsanitized inputs, set prices to text boxes.
+    # Try solvecaptcha-python module
 
     return walmart_price, amazon_price
 
