@@ -15,4 +15,4 @@ This is the orignal wireframe for version 1.0:
 
 This is the result from code, ran in Windows 11:
 
-![Price Tracker v1.0 Windows 11 Screenshot](Planning/MS Windows Price Tracker Screenshot.jpg)
+![Price Tracker v1.0 Windows 11 Screenshot](https://github.com/mmangus1/PriceTracker/blob/main/Planning/MS%20Windows%20Price%20Tracker%20Screenshot.jpg)
