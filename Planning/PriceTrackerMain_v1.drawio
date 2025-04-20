@@ -1,0 +1,67 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
+  <diagram name="Page-1" id="x9XwfIVyIJNECBUTK7oo">
+    <mxGraphModel dx="1873" dy="1113" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-1" value="--" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="20" width="1024" height="768" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="20" width="1024" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-5" value="File" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-7" value="Edit" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-9" value="Help" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-12" value="Individual Item Search:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="70" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-13" value="Item Search" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="70" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-14" value="Prices:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="740" y="70" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-15" value="Amazon.com:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="110" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="110" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-17" value="&lt;b&gt;OR&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-18" value="Product Code:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="160" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-19" value="ISBN/Product Code" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="160" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-20" value="Search" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="107.5" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-21" value="Walmart.com" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="170" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uzmgHOOmok9nMKRZDWmv-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="170" width="200" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
