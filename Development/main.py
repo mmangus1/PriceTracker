@@ -89,7 +89,7 @@ class App(tkinter.Frame):
 
         # Amazon Price Retrieval:
         try:
-            amazon_price_element = amazon_soup.find("span", class_="a-offscreen") # Using a more specific class
+            amazon_price_element = amazon_soup.find("span", class_="a-offscreen")  # Using a more specific class
             if amazon_price_element:
                 amazon_price = amazon_price_element.string.strip().replace(',', '')
                 price_obj = Price(amazon_price)
